@@ -27,10 +27,15 @@ main:
         push    rbp
         mov     rbp, rsp
         sub     rsp, 16
-        mov     DWORD PTR [rbp-4], 100000
-        mov     eax, DWORD PTR [rbp-4]
-        mov     edi, eax
+        mov     DWORD PTR [rbp-4], 0
+        jmp     .L5
+.L6:
+        mov     edi, 20
         call    fibonacci(int)
+        add     DWORD PTR [rbp-4], 1
+.L5:
+        cmp     DWORD PTR [rbp-4], 99999
+        jle     .L6
         mov     eax, 0
         leave
         ret

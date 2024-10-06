@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="342" onload="init(evt)" viewBox="0 0 1200 342" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="326" onload="init(evt)" viewBox="0 0 1200 326" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -421,161 +421,173 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="342.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="326.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="325" > </text>
+<text id="details" x="10.00" y="309" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="325" > </text>
+<text id="matched" x="1090.00" y="309" > </text>
 <g id="frames">
 <g >
-<title>security_vm_enough_memory_mm (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="53" width="7.1" height="15.0" fill="rgb(228,109,26)" rx="2" ry="2" />
-<text  x="1185.87" y="63.5" ></text>
+<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::~vector (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="165" width="13.2" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="1142.15" y="175.5" ></text>
 </g>
 <g >
-<title>cap_vm_enough_memory (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="37" width="7.1" height="15.0" fill="rgb(247,195,46)" rx="2" ry="2" />
-<text  x="1185.87" y="47.5" ></text>
+<title>__x64_sys_execve (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="197" width="24.4" height="15.0" fill="rgb(247,193,46)" rx="2" ry="2" />
+<text  x="1168.61" y="207.5" >_..</text>
 </g>
 <g >
-<title>__gnu_cxx::__enable_if&lt;std::__is_scalar&lt;int&gt;::__value, void&gt;::__type std::__fill_a1&lt;int*, int&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="53" width="318.3" height="15.0" fill="rgb(228,109,26)" rx="2" ry="2" />
-<text  x="833.29" y="63.5" >__gnu_cxx::__enable_if&lt;std::__is_scalar&lt;in..</text>
+<title>std::allocator_traits&lt;std::allocator&lt;int&gt; &gt;::deallocate (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="117" width="13.2" height="15.0" fill="rgb(250,207,49)" rx="2" ry="2" />
+<text  x="1142.15" y="127.5" ></text>
 </g>
 <g >
-<title>int* std::__uninitialized_default_n&lt;int*, unsigned long&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="133" width="318.3" height="15.0" fill="rgb(209,20,4)" rx="2" ry="2" />
-<text  x="833.29" y="143.5" >int* std::__uninitialized_default_n&lt;int*, ..</text>
+<title>__libc_start_call_main (5,832,778,138 samples, 96.81%)</title><rect x="23.3" y="213" width="1142.3" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
+<text  x="26.27" y="223.5" >__libc_start_call_main</text>
 </g>
 <g >
-<title>main (6,424,003,349 samples, 93.56%)</title><rect x="78.8" y="213" width="1104.1" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
-<text  x="81.84" y="223.5" >main</text>
+<title>x64_sys_call (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="213" width="24.4" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
+<text  x="1168.61" y="223.5" >x..</text>
 </g>
 <g >
-<title>setup_arg_pages (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="101" width="7.1" height="15.0" fill="rgb(222,82,19)" rx="2" ry="2" />
-<text  x="1185.87" y="111.5" ></text>
+<title>std::_Vector_base&lt;int, std::allocator&lt;int&gt; &gt;::_M_deallocate (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="133" width="13.2" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
+<text  x="1142.15" y="143.5" ></text>
 </g>
 <g >
-<title>void std::__fill_a&lt;int*, int&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="69" width="318.3" height="15.0" fill="rgb(238,154,37)" rx="2" ry="2" />
-<text  x="833.29" y="79.5" >void std::__fill_a&lt;int*, int&gt;</text>
+<title>load_elf_binary (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="101" width="24.4" height="15.0" fill="rgb(223,83,20)" rx="2" ry="2" />
+<text  x="1168.61" y="111.5" >l..</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (271,087,866 samples, 3.95%)</title><rect x="10.0" y="245" width="46.6" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
-<text  x="13.00" y="255.5" >std:..</text>
+<title>int* std::__uninitialized_default_n&lt;int*, unsigned long&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="117" width="398.3" height="15.0" fill="rgb(209,20,4)" rx="2" ry="2" />
+<text  x="743.95" y="127.5" >int* std::__uninitialized_default_n&lt;int*, unsigned long&gt;</text>
 </g>
 <g >
-<title>do_syscall_64 (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="245" width="7.1" height="15.0" fill="rgb(209,20,4)" rx="2" ry="2" />
-<text  x="1185.87" y="255.5" ></text>
+<title>_int_free_create_chunk (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="53" width="13.2" height="15.0" fill="rgb(244,182,43)" rx="2" ry="2" />
+<text  x="1142.15" y="63.5" ></text>
 </g>
 <g >
-<title>[unknown] (129,458,319 samples, 1.89%)</title><rect x="56.6" y="261" width="22.2" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="59.59" y="271.5" >[..</text>
+<title>_start (5,832,778,138 samples, 96.81%)</title><rect x="23.3" y="245" width="1142.3" height="15.0" fill="rgb(245,185,44)" rx="2" ry="2" />
+<text  x="26.27" y="255.5" >_start</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (199,193,560 samples, 2.90%)</title><rect x="1148.6" y="197" width="34.3" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
-<text  x="1151.63" y="207.5" >st..</text>
+<title>exec_binprm (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="133" width="24.4" height="15.0" fill="rgb(244,180,43)" rx="2" ry="2" />
+<text  x="1168.61" y="143.5" >e..</text>
 </g>
 <g >
-<title>expand_stack_locked (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="85" width="7.1" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
-<text  x="1185.87" y="95.5" ></text>
+<title>__libc_start_main_impl (5,832,778,138 samples, 96.81%)</title><rect x="23.3" y="229" width="1142.3" height="15.0" fill="rgb(218,63,15)" rx="2" ry="2" />
+<text  x="26.27" y="239.5" >__libc_start_main_impl</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (991,586,958 samples, 14.44%)</title><rect x="659.9" y="181" width="170.4" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
-<text  x="662.88" y="191.5" >std::vector&lt;int, std::..</text>
+<title>int* std::__fill_n_a&lt;int*, unsigned long, int&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="69" width="398.3" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
+<text  x="743.95" y="79.5" >int* std::__fill_n_a&lt;int*, unsigned long, int&gt;</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::_M_default_initialize (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="165" width="318.3" height="15.0" fill="rgb(210,25,6)" rx="2" ry="2" />
-<text  x="833.29" y="175.5" >std::vector&lt;int, std::allocator&lt;int&gt; &gt;::_M..</text>
+<title>int* std::__uninitialized_default_n_1&lt;true&gt;::__uninit_default_n&lt;int*, unsigned long&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="101" width="398.3" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="743.95" y="111.5" >int* std::__uninitialized_default_n_1&lt;true&gt;::__uninit_..</text>
 </g>
 <g >
-<title>int* std::__uninitialized_default_n_a&lt;int*, unsigned long, int&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="149" width="318.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="833.29" y="159.5" >int* std::__uninitialized_default_n_a&lt;int*..</text>
+<title>bprm_execve.part.0 (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="149" width="24.4" height="15.0" fill="rgb(228,106,25)" rx="2" ry="2" />
+<text  x="1168.61" y="159.5" >b..</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::vector (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="181" width="318.3" height="15.0" fill="rgb(216,53,12)" rx="2" ry="2" />
-<text  x="833.29" y="191.5" >std::vector&lt;int, std::allocator&lt;int&gt; &gt;::ve..</text>
+<title>do_execveat_common.isra.0 (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="181" width="24.4" height="15.0" fill="rgb(231,123,29)" rx="2" ry="2" />
+<text  x="1168.61" y="191.5" >d..</text>
 </g>
 <g >
-<title>exec_binprm (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="149" width="7.1" height="15.0" fill="rgb(244,180,43)" rx="2" ry="2" />
-<text  x="1185.87" y="159.5" ></text>
+<title>do_syscall_64 (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="229" width="24.4" height="15.0" fill="rgb(209,20,4)" rx="2" ry="2" />
+<text  x="1168.61" y="239.5" >d..</text>
 </g>
 <g >
-<title>x64_sys_call (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="229" width="7.1" height="15.0" fill="rgb(247,194,46)" rx="2" ry="2" />
-<text  x="1185.87" y="239.5" ></text>
+<title>void std::__fill_a&lt;int*, int&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="53" width="398.3" height="15.0" fill="rgb(238,154,37)" rx="2" ry="2" />
+<text  x="743.95" y="63.5" >void std::__fill_a&lt;int*, int&gt;</text>
 </g>
 <g >
-<title>[[stack]] (271,087,866 samples, 3.95%)</title><rect x="10.0" y="261" width="46.6" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="13.00" y="271.5" >[[st..</text>
+<title>main (5,832,778,138 samples, 96.81%)</title><rect x="23.3" y="197" width="1142.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="26.27" y="207.5" >main</text>
 </g>
 <g >
-<title>__libc_start_call_main (6,424,003,349 samples, 93.56%)</title><rect x="78.8" y="229" width="1104.1" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
-<text  x="81.84" y="239.5" >__libc_start_call_main</text>
+<title>__gnu_cxx::__enable_if&lt;std::__is_scalar&lt;int&gt;::__value, void&gt;::__type std::__fill_a1&lt;int*, int&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="37" width="398.3" height="15.0" fill="rgb(228,109,26)" rx="2" ry="2" />
+<text  x="743.95" y="47.5" >__gnu_cxx::__enable_if&lt;std::__is_scalar&lt;int&gt;::__value,..</text>
 </g>
 <g >
-<title>int* std::fill_n&lt;int*, unsigned long, int&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="101" width="318.3" height="15.0" fill="rgb(225,95,22)" rx="2" ry="2" />
-<text  x="833.29" y="111.5" >int* std::fill_n&lt;int*, unsigned long, int&gt;</text>
+<title>std::__new_allocator&lt;int&gt;::deallocate (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="101" width="13.2" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="1142.15" y="111.5" ></text>
 </g>
 <g >
-<title>optimized (6,865,960,152 samples, 100.00%)</title><rect x="10.0" y="277" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="13.00" y="287.5" >optimized</text>
+<title>fibonacci (5,765,451,877 samples, 95.69%)</title><rect x="23.3" y="181" width="1129.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="26.27" y="191.5" >fibonacci</text>
 </g>
 <g >
-<title>all (6,866,048,200 samples, 100%)</title><rect x="10.0" y="293" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="303.5" ></text>
+<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (67,326,261 samples, 1.12%)</title><rect x="1152.4" y="181" width="13.2" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
+<text  x="1155.42" y="191.5" ></text>
 </g>
 <g >
-<title>int* std::__fill_n_a&lt;int*, unsigned long, int&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="85" width="318.3" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
-<text  x="833.29" y="95.5" >int* std::__fill_n_a&lt;int*, unsigned long, ..</text>
+<title>int* std::__uninitialized_default_n_a&lt;int*, unsigned long, int&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="133" width="398.3" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="743.95" y="143.5" >int* std::__uninitialized_default_n_a&lt;int*, unsigned l..</text>
 </g>
 <g >
-<title>expand_downwards (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="69" width="7.1" height="15.0" fill="rgb(252,218,52)" rx="2" ry="2" />
-<text  x="1185.87" y="79.5" ></text>
+<title>all (6,025,092,799 samples, 100%)</title><rect x="10.0" y="277" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="287.5" ></text>
 </g>
 <g >
-<title>bprm_execve (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="181" width="7.1" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
-<text  x="1185.87" y="191.5" ></text>
+<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::_M_default_initialize (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="149" width="398.3" height="15.0" fill="rgb(210,25,6)" rx="2" ry="2" />
+<text  x="743.95" y="159.5" >std::vector&lt;int, std::allocator&lt;int&gt; &gt;::_M_default_ini..</text>
 </g>
 <g >
-<title>search_binary_handler (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="133" width="7.1" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
-<text  x="1185.87" y="143.5" ></text>
+<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::vector (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="165" width="398.3" height="15.0" fill="rgb(216,53,12)" rx="2" ry="2" />
+<text  x="743.95" y="175.5" >std::vector&lt;int, std::allocator&lt;int&gt; &gt;::vector</text>
 </g>
 <g >
-<title>do_execveat_common.isra.0 (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="197" width="7.1" height="15.0" fill="rgb(231,123,29)" rx="2" ry="2" />
-<text  x="1185.87" y="207.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="245" width="24.4" height="15.0" fill="rgb(218,63,15)" rx="2" ry="2" />
+<text  x="1168.61" y="255.5" >e..</text>
 </g>
 <g >
-<title>load_elf_binary (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="117" width="7.1" height="15.0" fill="rgb(223,83,20)" rx="2" ry="2" />
-<text  x="1185.87" y="127.5" ></text>
+<title>int* std::fill_n&lt;int*, unsigned long, int&gt; (2,033,223,260 samples, 33.75%)</title><rect x="740.9" y="85" width="398.3" height="15.0" fill="rgb(225,95,22)" rx="2" ry="2" />
+<text  x="743.95" y="95.5" >int* std::fill_n&lt;int*, unsigned long, int&gt;</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (129,458,319 samples, 1.89%)</title><rect x="56.6" y="245" width="22.2" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
-<text  x="59.59" y="255.5" >s..</text>
+<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (1,699,145,002 samples, 28.20%)</title><rect x="408.2" y="165" width="332.7" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
+<text  x="411.18" y="175.5" >std::vector&lt;int, std::allocator&lt;int&gt; &gt;::opera..</text>
 </g>
 <g >
-<title>__libc_start_main_impl (6,424,003,349 samples, 93.56%)</title><rect x="78.8" y="245" width="1104.1" height="15.0" fill="rgb(218,63,15)" rx="2" ry="2" />
-<text  x="81.84" y="255.5" >__libc_start_main_impl</text>
+<title>elf_load (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="69" width="24.4" height="15.0" fill="rgb(253,223,53)" rx="2" ry="2" />
+<text  x="1168.61" y="79.5" >e..</text>
 </g>
 <g >
-<title>int* std::__uninitialized_default_n_1&lt;true&gt;::__uninit_default_n&lt;int*, unsigned long&gt; (1,852,320,749 samples, 26.98%)</title><rect x="830.3" y="117" width="318.3" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
-<text  x="833.29" y="127.5" >int* std::__uninitialized_default_n_1&lt;true..</text>
+<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::operator[] (67,760,142 samples, 1.12%)</title><rect x="10.0" y="229" width="13.3" height="15.0" fill="rgb(226,97,23)" rx="2" ry="2" />
+<text  x="13.00" y="239.5" ></text>
 </g>
 <g >
-<title>__x64_sys_execve (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="213" width="7.1" height="15.0" fill="rgb(247,193,46)" rx="2" ry="2" />
-<text  x="1185.87" y="223.5" ></text>
+<title>bprm_execve (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="165" width="24.4" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
+<text  x="1168.61" y="175.5" >b..</text>
 </g>
 <g >
-<title>entry_SYSCALL_64_after_hwframe (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="261" width="7.1" height="15.0" fill="rgb(218,63,15)" rx="2" ry="2" />
-<text  x="1185.87" y="271.5" ></text>
+<title>_int_free_merge_chunk (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="69" width="13.2" height="15.0" fill="rgb(240,163,39)" rx="2" ry="2" />
+<text  x="1142.15" y="79.5" ></text>
 </g>
 <g >
-<title>_start (6,424,003,349 samples, 93.56%)</title><rect x="78.8" y="261" width="1104.1" height="15.0" fill="rgb(245,185,44)" rx="2" ry="2" />
-<text  x="81.84" y="271.5" >_start</text>
+<title>__GI___libc_free (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="85" width="13.2" height="15.0" fill="rgb(252,218,52)" rx="2" ry="2" />
+<text  x="1142.15" y="95.5" ></text>
 </g>
 <g >
-<title>bprm_execve.part.0 (41,410,618 samples, 0.60%)</title><rect x="1182.9" y="165" width="7.1" height="15.0" fill="rgb(228,106,25)" rx="2" ry="2" />
-<text  x="1185.87" y="175.5" ></text>
+<title>[[stack]] (67,760,142 samples, 1.12%)</title><rect x="10.0" y="245" width="13.3" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="13.00" y="255.5" ></text>
 </g>
 <g >
-<title>fibonacci (6,224,809,789 samples, 90.66%)</title><rect x="78.8" y="197" width="1069.8" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="81.84" y="207.5" >fibonacci</text>
+<title>load_elf_interp.isra.0 (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="85" width="24.4" height="15.0" fill="rgb(250,209,50)" rx="2" ry="2" />
+<text  x="1168.61" y="95.5" >l..</text>
+</g>
+<g >
+<title>std::_Vector_base&lt;int, std::allocator&lt;int&gt; &gt;::~_Vector_base (67,756,349 samples, 1.12%)</title><rect x="1139.2" y="149" width="13.2" height="15.0" fill="rgb(251,213,51)" rx="2" ry="2" />
+<text  x="1142.15" y="159.5" ></text>
+</g>
+<g >
+<title>search_binary_handler (124,363,244 samples, 2.06%)</title><rect x="1165.6" y="117" width="24.4" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
+<text  x="1168.61" y="127.5" >s..</text>
+</g>
+<g >
+<title>optimized (6,024,901,524 samples, 100.00%)</title><rect x="10.0" y="261" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="13.00" y="271.5" >optimized</text>
 </g>
 </g>
 </svg>
